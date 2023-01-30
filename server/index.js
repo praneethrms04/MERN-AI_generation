@@ -17,11 +17,11 @@ app.use("/api/v1/dalle", dalleRoutes);
 
 app.get("/", async (req, res) => {
   res.status(200).json({
-    message :"Hello from DALLE...!"
-  })
+    message: "Hello from DALLE...!",
+  });
 });
 
-const PORT = 8080;
+const PORT = 5000;
 const startServer = async () => {
   try {
     connectDB(process.env.MONGODB_URL);
